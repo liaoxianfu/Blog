@@ -18,26 +18,26 @@
 有些处理的还比较牵强，后期还是想自己手撸一个后台。
 ### 首页
 网址使用django默认的话 127.0.0.1：8000
-
+<img src='http://blog.democpp.cn/wp-content/uploads/2018/02/a4800d05908eafa642fbaeb1feb1ba11_c145f5806ffef0cddaeb65996d2776dd.png'/>
 
 ### 文章列表页
 
-
+<img src="http://blog.democpp.cn/wp-content/uploads/2018/02/a4800d05908eafa642fbaeb1feb1ba11_265970a8-dd3d-4240-8a7f-0e6cd1f669fb.jpg" style="vertical-align: bottom; max-width: 100%;" width="600" height="289">
 
 ### 文章详情页
 
-<img src='http://blog.democpp.cn/wp-content/uploads/2018/02/a4800d05908eafa642fbaeb1feb1ba11_c145f5806ffef0cddaeb65996d2776dd.png'/>
 
+<a target="_blank" href="http://blog.democpp.cn/wp-content/uploads/2018/02/a4800d05908eafa642fbaeb1feb1ba11_e25ff42a-6a7c-445d-858d-256c600e446e.jpg"><img src="http://blog.democpp.cn/wp-content/uploads/2018/02/a4800d05908eafa642fbaeb1feb1ba11_e25ff42a-6a7c-445d-858d-256c600e446e.jpg" width="600" height="367" style="vertical-align: bottom; max-width: 100%;"></a>
 
 ### 后台登陆页面
 使用默认的话是 127.0.0.1:8000/admin
 用户名：admin
 密码: abc12345
-
+<a target="_blank" href="http://blog.democpp.cn/wp-content/uploads/2018/02/a4800d05908eafa642fbaeb1feb1ba11_f668fa52-9f84-4b27-b26b-609b702a7308.png"><img src="http://blog.democpp.cn/wp-content/uploads/2018/02/a4800d05908eafa642fbaeb1feb1ba11_f668fa52-9f84-4b27-b26b-609b702a7308.png" style="vertical-align: bottom; max-width: 100%;" width="600" height="292"></a>
 
 ### 后台修改页面
 
-
+<a target="_blank" href="http://blog.democpp.cn/wp-content/uploads/2018/02/a4800d05908eafa642fbaeb1feb1ba11_c68c59c1-0261-4137-b89e-12439a8a06ba.png"><img src="http://blog.democpp.cn/wp-content/uploads/2018/02/a4800d05908eafa642fbaeb1feb1ba11_c68c59c1-0261-4137-b89e-12439a8a06ba.png" width="600" height="131" style="vertical-align: bottom; max-width: 100%;"></a>
 
 
 
