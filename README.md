@@ -1,7 +1,7 @@
 ## 感谢
 感谢<a href="http://www.yangqq.com/" >杨青 </a> 大大的古风模板，设计的很棒，给个赞。
 如有侵权，请联系我
-##运行环境
+## 运行环境
     python3.6
     Django==1.11.4
     django-ckeditor==5.4.0
@@ -13,7 +13,7 @@
     pytz==2018.3
 安装的包在requirements.txt里，可以pip直接安装即可
 
-##使用
+## 使用
 做的不好，还请多多包涵，目前算是个半成品，使用的时Django自带的后台，使用了 django-suit美化，富文本使用的是django-ckeditor，
 有些处理的还比较牵强，后期还是想自己手撸一个后台。
 ### 首页
