@@ -1,0 +1,32 @@
+<div class="con_content">
+    <div class="about_box">
+        <h2 class="nh1"><span>您现在的位置是：<a href="/index" target="_blank">网站首页</a>>><a href="/detail/{{ article.id }}"
+                                                                               target="_blank">{{ article.title }}</a></span>
+        </h2>
+        <div class="f_box">
+            <p class="a_title">{{ article.title }}</p>
+            <p class="p_title"></p>
+            <p class="box_p">
+                <span>发布时间：{{ article.update_date }}</span><span>作者：{{ article.author.user_name }}</span><span>来源：{{ article.get_type_display }}</span><span>点击：{{ article.views }}</span>
+            </p>
+            <!-- 可用于内容模板 -->
+        </div>
+        <ul class="about_content">
+            {{ article.article|safe }}
+        </ul>
+        <div class="nextinfos">
+            {% if pre_title %}
+                <p><a href="/detail/{{ article.id|add:1 }}">上一篇：{{ pre_title }}</a></p>
+            {% else %}
+                <p>已经是第一篇啦^_^</p>
+            {% endif %}
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            {% if next_title %}
+                <p><a href="/detail/{{ article.id|add:-1 }}">下一篇：{{ next_title }}</a></p>
+            {% else %}
+                <p>已经是最后一篇啦^_^</p>
+            {% endif %}
+        </div>
+
+    </div>
+</div>

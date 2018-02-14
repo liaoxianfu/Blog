@@ -1,0 +1,27 @@
+{% load randomself %}
+<div class="bloglist f_l">
+
+
+    {% for articles in articles_list  %}
+
+
+        <h3><a href="/detail/{{ articles.id }}/">{{ articles.title }}</a></h3>
+        <figure><img src="/static/gufeng/images/img_{% random_self 6 %}.jpg" alt="{{ articles.title }}"></figure>
+        <ul>
+            <p>
+                {% if articles.article|length >= 220 %}
+                    {{ articles.article|safe|slice:"220" }}...
+                {% else %} {{ articles.article|safe }}
+                {% endif %}
+
+            </p>
+            <a title="{{ articles.article }}" href="/detail/{{ articles.id }}" target="_blank"
+               class="readmore">阅读全文&gt;&gt;</a>
+        </ul>
+        <p class="dateview">
+
+            <span>{{ articles.update_date }}</span><span>作者：{{ articles.author.user_name }}</span><span>博客类型：{{ articles.get_type_display }}&nbsp;&nbsp;{{ articles.tag }}</span>
+        </p>
+
+    {% endfor %}
+</div>

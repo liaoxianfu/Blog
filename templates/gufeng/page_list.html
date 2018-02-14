@@ -1,0 +1,14 @@
+<div class="pagelist" style="position: absolute;left: 43%;">页次：{{ id }}/{{ page }}
+    <a href="/index/1">首页</a>
+    {% if have_pre %}
+        <a href="/index/{{ id|add:-1 }}">上一页</a>
+    {% endif %}
+
+
+
+    {% if have_next %}
+        <a href="/index/{{ id|add:1 }}">下一页</a>
+    {% endif %}
+    <a href="/index/{{ page }}">尾页</a>
+    共{{ page }}页
+</div>

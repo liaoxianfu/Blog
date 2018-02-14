@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+{% include 'gufeng/index/head.html' %}
+<body>
+<div id="wrapper">
+    {% include 'gufeng/header.html' %}
+    <div class="jztop"></div>
+    <div class="container">
+        {% include 'gufeng/index/index_blog.html' %}
+        <div class="r_box f_r">
+            {% include 'gufeng/index/index_right_top.html' %}
+            {% include 'gufeng/index/index_right_center.html' %}
+            <div class="ad"><img src="/static/gufeng/images/03.jpg"></div>
+        </div>
+
+    </div>
+    <!-- container代码 结束 -->
+
+    <div class="jzend"></div>
+    {% include 'gufeng/page_list.html' %}
+
+    {% include 'gufeng/footer.html' %}
+</div>
+</body>
+</html>

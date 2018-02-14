@@ -1,0 +1,13 @@
+<div class="tuwen">
+    <h3 class="tit" id="kaiti">热文推荐</h3>
+    {% for hot_article in hot_articles %}
+        <ul>
+            <li><a href="/detail/{{ hot_article.id }}"><b>{{ hot_article.title }}</b></a>
+                <p><span class="tulanmu"><a href="/">{{ hot_article.views }}</a></span><span
+                        class="tutime">{{ hot_article.update_date }}</span>
+                </p>
+            </li>
+        </ul>
+    {% endfor %}
+
+</div>

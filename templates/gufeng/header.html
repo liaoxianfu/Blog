@@ -1,0 +1,69 @@
+
+    <style type="text/css">
+
+    @font-face {
+        font-family: xingkai;
+        src: url("/static/gufeng/font/xingkai.otf");
+    }
+
+    #kaiti1 {
+        font-family: xingkai;
+        font-size: 36px;
+    }
+    #kaiti{
+        font-family: xingkai;
+        font-size: 20px;
+    }
+
+
+</style>
+<header>
+    <div class="headtop"></div>
+    <div class="contenttop">
+        <div class="logo f_l" id="kaiti1">过不去的过去</div>
+        <div class="search f_r">
+            <a href="#" style="display: inline-block;float: right;width: 40px;height: 20px">{{ register }}</a>&nbsp;&nbsp;&nbsp;
+            <a href="#" style="display: inline-block;float: right;width: 40px;height: 20px">{{ login }}</a>
+            <span></span>
+            <ul class="menu" style="display: inline-block;float: right">
+                {#                用户#}
+                <li><a href="#" style="color: #747F8C">{{ user_name }}</a>
+                    <ul>
+                        <li><a href="about.html">个人简介</a></li>
+                        <li><a href="listpic.html">个人相册</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="blank"></div>
+        <nav>
+            <div class="navigation">
+                <ul class="menu">
+                    {% for bar in navigation_bar %}
+                        <li><a href="{{ bar.link }}" id="kaiti">{{ bar.title }}</a>
+                            {% if bar.have_second_bar %}
+                                <ul>
+                                    {% for foo in bar.secondnavigationbar_set.all %}
+                                        <li id="kaiti"><a href="{{ foo.second_link }}">{{ foo.second_title }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+        </nav>
+        <SCRIPT type=text/javascript>
+
+            $(function () {
+                $(".menu ul").css({display: "none"}); // Opera Fix
+                $(".menu li").hover(function () {
+                    $(this).find('ul:first').css({visibility: "visible", display: "none"}).slideDown("normal");
+                }, function () {
+                    $(this).find('ul:first').css({visibility: "hidden"});
+                });
+            });
+        </SCRIPT>
+    </div>
+</header>
